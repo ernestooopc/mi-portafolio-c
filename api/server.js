@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.post("/api/enviar", async (req, res) => {
+app.post("/api/server", async (req, res) => {
   const { name, email, phone, message } = req.body;
   
   if (!name || !email || !phone || !message) {
